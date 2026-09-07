@@ -1,0 +1,72 @@
+[
+  {
+    "id": "home",
+    "translationKey": "home",
+    "locale": "en-US",
+    "routeKind": "home",
+    "url": "/",
+    "alternates": {
+      "en-US": "/"
+    }
+  },
+  {
+    "id": "identity-overview",
+    "translationKey": "identity-overview",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/about",
+    "alternates": {
+      "en-US": "/about"
+    }
+  },
+  {
+    "id": "codes",
+    "translationKey": "codes",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/codes",
+    "alternates": {
+      "en-US": "/codes"
+    }
+  },
+  {
+    "id": "menu",
+    "translationKey": "menu-dishes",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/menu",
+    "alternates": {
+      "en-US": "/menu"
+    }
+  },
+  {
+    "id": "ulam",
+    "translationKey": "ulam-vs-real-karinderya",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/ulam",
+    "alternates": {
+      "en-US": "/ulam"
+    }
+  },
+  {
+    "id": "upgrades",
+    "translationKey": "upgrades-progression",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/upgrades",
+    "alternates": {
+      "en-US": "/upgrades"
+    }
+  },
+  {
+    "id": "walkthrough",
+    "translationKey": "beginner-walkthrough",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/walkthrough",
+    "alternates": {
+      "en-US": "/walkthrough"
+    }
+  }
+]

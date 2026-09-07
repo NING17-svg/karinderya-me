@@ -24,14 +24,15 @@ export interface SiteConfig {
 }
 
 export const site: SiteConfig = {
-  name: "Template Game Guide",
-  brandMark: "GG",
-  gameName: "Template Game",
-  domain: "example.com",
-  baseUrl: (process.env.NEXT_PUBLIC_SITE_URL || "https://example.com").replace(/\/$/, ""),
+  name: "Karinderya! Guide",
+  brandMark: "KR",
+  gameName: "Karinderya!",
+  domain: "karinderya.me",
+  baseUrl: (process.env.NEXT_PUBLIC_SITE_URL || "https://karinderya.me").replace(/\/$/, ""),
   description:
-    "A neutral game guide hub template for launch pages, wiki notes, guides, release information, and FAQs.",
-  tagline: "Guides, wiki notes, release info, and launch FAQs in one clean hub.",
+    "Unofficial US English guide hub for Karinderya! on Roblox (Universe 10648820673). Codes, menu, ulam glossary, upgrades, walkthrough, and disambiguation from real-world karinderya eateries.",
+  tagline:
+    "Codes, menu, ulam terms, upgrades, and a beginner walkthrough for the SILOG Group's Filipino eatery simulator.",
   primaryLocale: "en-US",
   locales: [
     {
@@ -53,16 +54,36 @@ export const site: SiteConfig = {
       },
     },
   ],
-  author: "Template Game Guide",
+  author: "Karinderya.me",
   gaMeasurementId: process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || "",
   bingSiteAuthCode: process.env.NEXT_PUBLIC_BING_SITE_AUTH_CODE || "",
   officialSources: [
     {
-      label: "Official website",
-      href: "https://example.com",
-      description: "Replace this with the game publisher or developer website.",
+      label: "Roblox universe page",
+      href: "https://www.roblox.com/games/116497287371701/Karinderya!",
+      description: "Official store page for Karinderya! (Root Place 116497287371701).",
+    },
+    {
+      label: "Roblox Games API",
+      href: "https://games.roblox.com/v1/games?universeIds=10648820673",
+      description: "Universe 10648820673 metadata: created 2026-08-07, updated 2026-08-30.",
+    },
+    {
+      label: "SILOG Group",
+      href: "https://www.roblox.com/groups",
+      description: "Creator group behind Karinderya!.",
+    },
+    {
+      label: "Wikipedia karinderya",
+      href: "https://en.wikipedia.org/wiki/Karinderya",
+      description: "Real-world Filipino eatery concept, used only inside the ulam clarification page.",
+    },
+    {
+      label: "Wikipedia ulam",
+      href: "https://en.wikipedia.org/wiki/Ulam",
+      description: "Filipino ulam category used only inside the ulam clarification page.",
     },
   ],
   disclaimer:
-    "This is an unofficial fan guide template. Replace placeholder facts with official sources before launch.",
+    "Karinderya.me is an unofficial fan guide. It is not affiliated with Roblox Corporation or the SILOG Group. Game facts are checked against the Roblox universe page and dated third-party codes aggregators; refer to the universe page for the live game.",
 };
