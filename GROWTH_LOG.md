@@ -24,6 +24,13 @@ Record every growth-relevant edit here. Keep entries short, factual, and useful 
 - Entity changed: Generic entity Hubs/details now render source links, relationships, and optional registered local images from one base fact package.
 - Verification: Typecheck, template validation, content validation, rendered SEO validation, route-manifest generation, and multilingual entity fixtures.
 
+### 2026-09-07 - Adsterra integration activated
+
+- Task: Adsterra-integrator populated the six fixed ad units (Native Banner, 728x90, 468x60, 320x50, 160x600, Smartlink) for karinderya.me.
+- Files changed: `src/data/ads.ts` (six values), `GROWTH_LOG.md`.
+- Ad details: placements 31128655-31128660, all six units Active on Adsterra platform; local verification runs after the patch.
+- Follow-up: site-performance-analyst weekly check will start tracking revenue once AdSense/Adsterra ingest flows settle.
+
 ### YYYY-MM-DD - Template baseline initialized
 
 - Task: Create the initial generated guide-site baseline.
