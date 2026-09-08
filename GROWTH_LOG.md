@@ -24,6 +24,15 @@ Record every growth-relevant edit here. Keep entries short, factual, and useful 
 - Entity changed: Generic entity Hubs/details now render source links, relationships, and optional registered local images from one base fact package.
 - Verification: Typecheck, template validation, content validation, rendered SEO validation, route-manifest generation, and multilingual entity fixtures.
 
+### 2026-09-08 - Active codes roster populated on /codes
+
+- Task: Replace the deliberately-empty roster section on /codes with the three verified codes (DECOPART1, BRGYPERMIT, 100KCCU) and their known rewards, plus an 'expired roster' subsection using the public aggregator list.
+- Files changed: `src/data/pages/fixed-pages.ts` (codes page modules, quickAnswer, keyFacts, metaDescription, summary, lastReviewed), `GROWTH_LOG.md`.
+- URLs affected: `/codes` only; existing page rewritten in place, no new routes.
+- Sources: gamerant.com/karinderya-codes-roblox, karinderyawiki.com/codes/all-codes, plus the dated aggregators listed in the page footer (Dexerto, MrGuider, ProGameGuides, Roblox Den, Beebom).
+- Internal link role: codes page is the dedicated dated roster; the homepage Recent Updates grid surfaces it via `lastReviewed: 2026-09-08`.
+- Verification: `npm run verify`.
+
 ### 2026-09-07 - Adsterra integration activated
 
 - Task: Adsterra-integrator populated the six fixed ad units (Native Banner, 728x90, 468x60, 320x50, 160x600, Smartlink) for karinderya.me.

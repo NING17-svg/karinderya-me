@@ -114,9 +114,9 @@ export const fixedPages: PageContent[] = [
     h1: "Karinderya! codes, redemption, and code rewards",
     seoTitle: "Karinderya! codes and how to redeem them",
     metaDescription:
-      "Working Karinderya! codes for Roblox, how to redeem them inside the in-game Codes menu, and what each code rewards. Dated snapshot from third-party codes sites.",
+      "Working Karinderya! codes for Roblox (DECOPART1, BRGYPERMIT, 100KCCU), how to redeem them inside the in-game Codes menu, and what each code rewards. Includes an expired roster from public aggregators dated 2026-09-08.",
     summary:
-      "Codes roster and redemption walkthrough for Karinderya! on Roblox. The roster is a dated snapshot from third-party codes sites; specific code strings and per-code rewards must be re-checked against those trackers before redeeming.",
+      "Codes roster and redemption walkthrough for Karinderya! on Roblox. The active roster lists three verified codes (DECOPART1, BRGYPERMIT, 100KCCU) with their known rewards, plus an expired roster from the public aggregators so future churn is visible from one page.",
     hero: {
       eyebrow: "Codes & rewards",
       subtitle:
@@ -128,12 +128,13 @@ export const fixedPages: PageContent[] = [
       ],
     },
     quickAnswer:
-      "Karinderya! exposes a Codes button inside the in-game menu; redeeming a code there applies its reward (cash, boosts, or cosmetic items) directly to your karinderya. Specific code strings and per-code reward amounts change constantly, and the only verified list at any given moment is the one in-game or on the third-party codes aggregators (Gamerant, Dexerto, MrGuider, ProGameGuides, Roblox Den, Beebom). Specific reward amounts beyond what those aggregators state are not confirmed as of 2026-09-07.",
+      "As of 2026-09-08, the active Karinderya! roster on the public aggregators lists three codes: DECOPART1 (5k Cash + 2x Cash Potion), BRGYPERMIT (cash + potions), and 100KCCU (cash). Paste or type each code exactly inside the in-game Codes panel to redeem; codes are case-sensitive and time-limited, so re-check the aggregator the day you redeem.",
     keyFacts: [
       { label: "Where to redeem", value: "In-game Codes button" },
-      { label: "Roster source", value: "Third-party codes aggregators (dated snapshots)" },
+      { label: "Roster source", value: "Public aggregators (Gamerant, karinderyawiki, Dexerto, MrGuider, ProGameGuides, Roblox Den, Beebom)" },
+      { label: "Roster dated", value: "2026-09-08" },
       { label: "Update cadence", value: "Re-check before redeeming" },
-      { label: "Aggregators", value: "Gamerant, Dexerto, MrGuider, ProGameGuides, Roblox Den, Beebom" },
+      { label: "Active codes", value: "DECOPART1, BRGYPERMIT, 100KCCU" },
     ],
     modules: [
       {
@@ -181,28 +182,48 @@ export const fixedPages: PageContent[] = [
         tone: "caution",
         title: "Code rosters change every day",
         body:
-          "Roblox codes are time-limited. A code that worked yesterday may be expired today, and new codes can be published without notice. Before redeeming, re-check the third-party codes aggregators that mirror the live game.",
+          "Roblox codes are time-limited. A code that worked yesterday may be expired today, and new codes can be published without notice. Before redeeming, re-check the public aggregators that mirror the live game.",
       },
       {
-        id: "what-rewards-look-like",
-        type: "prose",
-        heading: "What the codes usually reward",
-        body:
-          "In Filipino restaurant-simulator experiences in this style, code rewards typically fall into three buckets: in-game cash (used to buy equipment or menu upgrades), boost items (temporary multipliers on customer payments or cooking speed), and cosmetics (signage, plates, decor). Karinderya! follows the same pattern, but the exact reward attached to any specific code is published only on the third-party codes sites, and that list is a dated snapshot. Specific reward amounts beyond what those trackers state are not confirmed as of 2026-09-07.",
+        id: "active-codes-roster",
+        type: "data-table",
+        heading: "Active Karinderya! codes (dated 2026-09-08)",
+        columns: [
+          { key: "code", label: "Code" },
+          { key: "reward", label: "Reward" },
+          { key: "source", label: "Listed by" },
+        ],
+        rows: [
+          {
+            code: "DECOPART1",
+            reward: "5k Cash + 2x Cash Potion",
+            source: "Gamerant, karinderyawiki",
+          },
+          {
+            code: "BRGYPERMIT",
+            reward: "Cash + potions",
+            source: "Gamerant, karinderyawiki",
+          },
+          {
+            code: "100KCCU",
+            reward: "Cash",
+            source: "Gamerant, karinderyawiki",
+          },
+        ],
       },
       {
-        id: "expired-section",
+        id: "expired-roster",
         type: "prose",
-        heading: "Expired and inactive codes",
+        heading: "Expired roster from public aggregators",
         body:
-          "If a code returns an error or no reward, the code is expired or already redeemed on the account. Roblox codes are typically single-use per code string, and once a code string is retired by the creator it cannot be reactivated. The third-party codes sites keep an expired section; cross-referencing against that section is the fastest way to know whether to keep trying a code or move on.",
+          "The public aggregators (Gamerant, karinderyawiki, Dexerto, MrGuider, ProGameGuides, Roblox Den, Beebom) keep an expired section so future churn is visible from one page. Codes below previously redeemed for cash, potions, or building materials but no longer grant a reward in Karinderya! as of 2026-09-08: 50KCCU, 3MVISITS (cash + building materials), 2MVISITS (cash + building materials), BAKARENEPAIRYAN (cash + building materials), BATINATAYOHA, 1MVISITS (cash + Deluxe Stove + Parsons Chair + Parsons Table), LERISNATO (5k Cash), BALDOG (5k Cash), MATERIALSDAW (5k Cash + building materials), BRICKS (1k Cash). If a code in this list ever returns a reward again, treat it as a creator reactivation rather than a normal roster entry; the public aggregators will reflect the change on their next refresh.",
       },
     ],
     faqIds: ["do-codes-exist", "where-to-find-codes", "expired-code-help", "is-official-karinderya-me"],
     relatedPageIds: ["identity-overview", "menu", "upgrades", "walkthrough"],
     schemaTypes: ["Article", "BreadcrumbList", "FAQPage"],
     sourceStatus: "official",
-    lastReviewed: "2026-09-07",
+    lastReviewed: "2026-09-08",
   },
   {
     id: "menu",
