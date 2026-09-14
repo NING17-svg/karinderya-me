@@ -105,7 +105,7 @@ export const faqItems: FAQItem[] = [
     id: "price-points-known",
     question: "Are the per-dish price points and unlock tiers confirmed?",
     answer:
-      "Exact per-dish price points and per-dish unlock tiers beyond what Roblox community and creator videos state are not confirmed as of 2026-09-07. Treat any specific number from a third-party video as a dated snapshot.",
+      "Community trackers record the two starting ticket prices (₱35 for 1 Rice + 1 Condiments and ₱75 for 1 Rice + 1 Egg + 1 Condiments, dated 2026-08-24) and the 100 / 400 / 670 / 1,994 customer-milestone menu-group unlock thresholds. Per-dish price points beyond those two starting tickets are not confirmed. Treat any specific number from a third-party video as a dated snapshot and re-check the source after the next Mini-Update.",
     pageIds: ["menu", "upgrades"],
     category: "site",
     schemaEligible: true,

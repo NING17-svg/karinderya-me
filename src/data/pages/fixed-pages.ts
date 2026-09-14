@@ -237,7 +237,7 @@ export const fixedPages: PageContent[] = [
     h1: "Karinderya! menu, dishes, and the customer-money loop",
     seoTitle: "Karinderya! menu, dishes, and how the customer-money loop works",
     metaDescription:
-      "In-game Karinderya! menu reference: dish names, customer demand, unlock conditions, and how menu upgrades feed the customer-money loop. Per-dish price points beyond community coverage are not confirmed as of 2026-09-07.",
+      "In-game Karinderya! menu reference: dish names, customer demand, unlock conditions, and how menu upgrades feed the customer-money loop. Includes a 2026-08-24 starting-ticket and 2026-09-13 Deluxe Stove snapshot. Per-dish price points beyond community coverage are not confirmed.",
     summary:
       "In-game menu reference for Karinderya! on Roblox: which dishes are available, which ones customers actually order, and how menu upgrades feed the customer-money loop that funds progression.",
     hero: {
@@ -251,12 +251,14 @@ export const fixedPages: PageContent[] = [
       ],
     },
     quickAnswer:
-      "Karinderya! runs a Filipino restaurant simulator menu: a small set of ulam dishes (adobo, sinigang, kare-kare, menudo, lumpia and similar) plus rice, drinks, and sides. Customers arrive, pick from whatever the current menu offers, pay, and that money funds the equipment and menu upgrades that widen what can be served next. Exact per-dish price points and per-dish unlock tiers beyond what community videos and the universe page state are not confirmed as of 2026-09-07.",
+      "Karinderya! runs a Filipino restaurant simulator menu: a small set of ulam dishes (adobo, sinigang, kare-kare, menudo, lumpia and similar) plus rice, drinks, and sides. Customers arrive, pick from whatever the current menu offers, pay, and that money funds the equipment and menu upgrades that widen what can be served next. The two starting tickets community trackers record are ₱35 (1 Rice + 1 Condiments) and ₱75 (1 Rice + 1 Egg + 1 Condiments), with new menu groups unlocking at 100, 400, 670, and 1,994 customers served. Exact per-dish price points beyond those two starting tickets are not confirmed.",
     keyFacts: [
       { label: "Dish style", value: "Filipino ulam over rice" },
-      { label: "Pricing tiers", value: "Not confirmed per-dish as of 2026-09-07" },
-      { label: "Unlock progression", value: "Driven by customer-money loop" },
-      { label: "Loop source", value: "Roblox universe page and community videos" },
+      { label: "Starting ticket (rice + condiments)", value: "₱35 (dated 2026-08-24)" },
+      { label: "Starting ticket (rice + egg + condiments)", value: "₱75 (dated 2026-08-24)" },
+      { label: "Customer milestones for new menu groups", value: "100 / 400 / 670 / 1,994 served" },
+      { label: "Pricing tiers beyond starting tickets", value: "Not confirmed per-dish" },
+      { label: "Loop source", value: "Roblox universe page, karinderyawiki, rouniverse" },
     ],
     modules: [
       {
@@ -289,6 +291,27 @@ export const fixedPages: PageContent[] = [
           "Exact per-dish unlock tiers and per-dish price points beyond what Roblox community and creator videos state are not confirmed as of 2026-09-07. Treat any specific number from a third-party video as a snapshot from when it was recorded, not a current state claim.",
       },
       {
+        id: "starting-economy-snapshot",
+        type: "prose",
+        heading: "Starting-economy snapshot (community-derived)",
+        body:
+          "The karinderyawiki 'How to Make Money' guide and the rouniverse Karinderya guide both publish concrete starting numbers that the universe page does not. They are community trackers, not first-party data; re-check on the day you read this page, especially after a Mini-Update.\n\nStarting ticket prices dated 2026-08-24: a 1 Rice + 1 Condiments order pays ₱35, and a 1 Rice + 1 Egg + 1 Condiments order pays ₱75. New menu groups unlock at 100, 400, 670, and 1,994 customers served. Grocery restock costs (wiki ingredients guide) are Vegetables ₱90/kg, Eggs ₱120/dozen, Condiments ₱135, Rice (25 kg) ₱200, Bangus ₱130/kg, and Beef ₱585/kg. Use ticket price minus restock cost as the per-ticket margin estimate; per-dish prices beyond the two starting tickets remain unconfirmed.\n\n2026-09-13 caveat: the Deluxe Stove is no longer free via a code, so the equipment-priority recommendation now assumes cash-funded purchases. Check the active codes roster for which items remain code-redeemable and the upgrades page for the new order.",
+        links: [
+          { label: "Active codes roster", href: "/codes/" },
+          { label: "Upgrades & progression", href: "/upgrades/" },
+          { label: "karinderyawiki how-to-make-money", href: "https://karinderyawiki.com/guides/how-to-make-money" },
+          { label: "rouniverse Karinderya guide", href: "https://rouniverse.com/articles/karinderya-guide" },
+        ],
+      },
+      {
+        id: "starting-economy-recheck",
+        type: "callout",
+        tone: "tip",
+        title: "Re-check after the next Mini-Update",
+        body:
+          "Ticket prices, grocery costs, and customer-milestone thresholds are all snapshot numbers from a third-party tracker. The 2026-09-13 Deluxe Stove caveat is one recent example of how a Mini-Update can change the loop. Re-check the karinderyawiki and rouniverse guides after the next update before quoting any number in a guide or video.",
+      },
+      {
         id: "menu-vs-upgrades",
         type: "prose",
         heading: "Menu and upgrades work together",
@@ -300,7 +323,7 @@ export const fixedPages: PageContent[] = [
     relatedPageIds: ["identity-overview", "ulam", "upgrades", "walkthrough"],
     schemaTypes: ["Article", "BreadcrumbList", "FAQPage"],
     sourceStatus: "official",
-    lastReviewed: "2026-09-07",
+    lastReviewed: "2026-09-15",
   },
   {
     id: "ulam",
@@ -399,9 +422,9 @@ export const fixedPages: PageContent[] = [
     h1: "Karinderya! upgrades and progression",
     seoTitle: "Karinderya! upgrades, progression order, and the customer-money loop",
     metaDescription:
-      "How upgrades, unlocks, and progression work in Karinderya! and the fastest way to advance the karinderya. Specific upgrade math beyond community videos is not confirmed as of 2026-09-07.",
+      "How upgrades, unlocks, and progression work in Karinderya! and the fastest way to advance the karinderya. Includes a 2026-09-13 caveat that the Deluxe Stove is no longer code-redeemable, so equipment priority now assumes cash-funded purchases. Specific upgrade math beyond community videos is not confirmed.",
     summary:
-      "Upgrades, unlocks, and progression in Karinderya! on Roblox: the customer-money loop, equipment tiers, and a recommended upgrade order.",
+      "Upgrades, unlocks, and progression in Karinderya! on Roblox: the customer-money loop, equipment tiers, and a recommended upgrade order that now assumes cash-funded purchases for the Deluxe Stove.",
     hero: {
       eyebrow: "Upgrades & progression",
       subtitle:
@@ -413,12 +436,14 @@ export const fixedPages: PageContent[] = [
       ],
     },
     quickAnswer:
-      "Karinderya! progression is a single closed loop: customers arrive, order from the current menu, pay cash, and that cash funds equipment upgrades and menu unlocks. The right progression order is to chase the equipment tier that unlocks the next dish on the menu, run that dish until the next menu unlock, and repeat. Specific upgrade tier math and exact unlock thresholds beyond what Roblox community and creator videos state are not confirmed as of 2026-09-07.",
+      "Karinderya! progression is a single closed loop: customers arrive, order from the current menu, pay cash, and that cash funds equipment upgrades and menu unlocks. The right progression order is to chase the equipment tier that unlocks the next dish on the menu, run that dish until the next menu unlock, and repeat. Community trackers record 100, 400, 670, and 1,994 customers served as the menu-group unlock thresholds. As of 2026-09-13 the Deluxe Stove is no longer free via a code, so the equipment-priority recommendation now assumes cash-funded purchases. Specific upgrade tier math beyond what community trackers state is not confirmed.",
     keyFacts: [
       { label: "Loop source", value: "Customer payments fund equipment and menu unlocks" },
       { label: "Recommended order", value: "Equipment tier that unlocks next dish" },
-      { label: "Upgrade math", value: "Not confirmed beyond community videos as of 2026-09-07" },
-      { label: "Source tier", value: "Roblox universe page, community, and creator videos" },
+      { label: "Customer-milestone menu-group unlocks", value: "100 / 400 / 670 / 1,994 served" },
+      { label: "Deluxe Stove (2026-09-13)", value: "No longer code-redeemable; must be earned or purchased" },
+      { label: "Upgrade math beyond milestones", value: "Not confirmed" },
+      { label: "Source tier", value: "Roblox universe page, karinderyawiki, rouniverse" },
     ],
     modules: [
       {
@@ -463,19 +488,40 @@ export const fixedPages: PageContent[] = [
           "Codes sit alongside the customer-money loop as a second cash source. Redeeming an active code adds cash (or a boost) to the karinderya without requiring a customer wave. Codes do not replace the customer-money loop; they speed it up. The codes page lists the current codes roster and the redemption walkthrough.",
       },
       {
+        id: "starting-economy-snapshot",
+        type: "prose",
+        heading: "Starting-economy snapshot (community-derived, dated 2026-08-24 / 2026-09-13)",
+        body:
+          "The karinderyawiki 'How to Make Money' guide and the rouniverse Karinderya guide both publish concrete numbers the universe page does not. The community sources are dated, not first-party data, so re-check after a Mini-Update.\n\nMenu-group unlocks fire at 100, 400, 670, and 1,994 customers served. Starting ticket prices dated 2026-08-24 are ₱35 (1 Rice + 1 Condiments) and ₱75 (1 Rice + 1 Egg + 1 Condiments). Grocery restock costs from the wiki ingredients guide are Vegetables ₱90/kg, Eggs ₱120/dozen, Condiments ₱135, Rice (25 kg) ₱200, Bangus ₱130/kg, and Beef ₱585/kg. Use ticket price minus restock cost as the per-ticket margin estimate.\n\n2026-09-13 caveat: the Deluxe Stove is no longer free via a code, and the Parsons furniture reward from 2MVISITS is no longer redeemable. The equipment-priority recommendation now assumes cash-funded purchases for the Deluxe Stove. The active codes roster tracks what remains code-redeemable.",
+        links: [
+          { label: "Active codes roster", href: "/codes/" },
+          { label: "Menu reference", href: "/menu/" },
+          { label: "karinderyawiki how-to-make-money", href: "https://karinderyawiki.com/guides/how-to-make-money" },
+          { label: "rouniverse Karinderya guide", href: "https://rouniverse.com/articles/karinderya-guide" },
+        ],
+      },
+      {
+        id: "deluxe-stove-caveat",
+        type: "callout",
+        tone: "caution",
+        title: "Deluxe Stove is no longer code-redeemable (2026-09-13)",
+        body:
+          "The Deluxe Stove used to come free via a code. As of 2026-09-13 it must be earned through the customer-money loop or purchased in-game. Treat any older guide that lists the Deluxe Stove as a free code reward as out of date. Re-check the active codes roster before planning a session around a code-redeemable item.",
+      },
+      {
         id: "upgrade-caveats",
         type: "callout",
         tone: "caution",
         title: "Exact upgrade math is not confirmed",
         body:
-          "Specific upgrade tier math and exact unlock thresholds beyond what Roblox community and creator videos state are not confirmed as of 2026-09-07. Use the recommended order above as a starting point and verify against the universe page when a specific number matters.",
+          "Specific upgrade tier math and exact unlock thresholds beyond the customer-milestone menu-group thresholds above are not confirmed. Use the recommended order above as a starting point and verify against the universe page when a specific number matters.",
       },
     ],
     faqIds: ["best-upgrade-order", "do-codes-help-progression", "price-points-known", "menu-and-upgrade-order"],
     relatedPageIds: ["identity-overview", "menu", "walkthrough"],
     schemaTypes: ["Article", "BreadcrumbList", "FAQPage"],
     sourceStatus: "official",
-    lastReviewed: "2026-09-07",
+    lastReviewed: "2026-09-15",
   },
   {
     id: "walkthrough",
@@ -505,12 +551,14 @@ export const fixedPages: PageContent[] = [
       ],
     },
     quickAnswer:
-      "For a first session in Karinderya!: open the universe page, launch the experience, run the starting menu to learn the customer-money loop, redeem any active code from the Codes panel, then chase the equipment tier that unlocks the next menu dish. Multi-day progression timelines beyond what Roblox community coverage states are not confirmed as of 2026-09-07.",
+      "For a first session in Karinderya!: open the universe page, launch the experience, run the starting menu to learn the customer-money loop, redeem any active code from the Codes panel, then chase the equipment tier that unlocks the next menu dish. Community trackers record 100, 400, 670, and 1,994 customers served as menu-group unlock thresholds, and 2026-09-13 the Deluxe Stove is no longer code-redeemable. Multi-day progression timelines beyond what Roblox community coverage states are not confirmed.",
     keyFacts: [
       { label: "First step", value: "Launch from the universe page" },
       { label: "First upgrade target", value: "Equipment tier that unlocks the next dish" },
       { label: "Code use", value: "Redeem from the in-game Codes panel" },
       { label: "Loop", value: "Customers → cash → upgrades → menu → customers" },
+      { label: "Menu-group unlock thresholds", value: "100 / 400 / 670 / 1,994 served" },
+      { label: "Deluxe Stove (2026-09-13)", value: "No longer code-redeemable" },
     ],
     modules: [
       {
@@ -562,7 +610,7 @@ export const fixedPages: PageContent[] = [
           },
           {
             title: "Menu",
-            summary: "In-game menu, customer demand, unlock progression.",
+            summary: "In-game menu, customer demand, unlock progression, and the 2026-08-24 starting-economy snapshot.",
             href: "/menu/",
           },
           {
@@ -572,10 +620,18 @@ export const fixedPages: PageContent[] = [
           },
           {
             title: "Upgrades & progression",
-            summary: "Equipment tiers and recommended upgrade order.",
+            summary: "Equipment tiers, recommended upgrade order, and the 2026-09-13 Deluxe Stove caveat.",
             href: "/upgrades/",
           },
         ],
+      },
+      {
+        id: "starting-economy-pointer",
+        type: "callout",
+        tone: "tip",
+        title: "Starting-economy snapshot lives on the Menu and Upgrades pages",
+        body:
+          "Concrete starting numbers (₱35 and ₱75 starting tickets dated 2026-08-24, the 100 / 400 / 670 / 1,994 customer-milestone menu-group thresholds, and the 2026-09-13 note that the Deluxe Stove is no longer code-redeemable) are kept on the Menu and Upgrades pages. Re-check those pages after the next Mini-Update before quoting any number.",
       },
       {
         id: "first-session-caveats",
@@ -590,6 +646,6 @@ export const fixedPages: PageContent[] = [
     relatedPageIds: ["identity-overview", "codes", "menu", "ulam", "upgrades"],
     schemaTypes: ["Article", "BreadcrumbList", "FAQPage"],
     sourceStatus: "official",
-    lastReviewed: "2026-09-07",
+    lastReviewed: "2026-09-15",
   },
 ];

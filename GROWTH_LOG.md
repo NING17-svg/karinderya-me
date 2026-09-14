@@ -6,6 +6,15 @@ Record every growth-relevant edit here. Keep entries short, factual, and useful 
 
 ## Change Log
 
+### 2026-09-15 - Starter cash economy snapshot added
+
+- Task: Add a community-derived starting-economy snapshot to the Menu and Upgrades pages (and a short pointer on Walkthrough) so a new karinderya owner can plan the first session around dated ticket, grocery, and customer-milestone numbers, and so the Deluxe Stove equipment-priority recommendation picks up the 2026-09-13 caveat that it is no longer code-redeemable.
+- Files changed: `src/data/pages/fixed-pages.ts` (new `starting-economy-snapshot` and `starting-economy-recheck` modules on /menu; new `starting-economy-snapshot` and `deluxe-stove-caveat` modules on /upgrades; new `starting-economy-pointer` callout on /walkthrough; updated quickAnswer, keyFacts, metaDescription, and lastReviewed on all three pages).
+- URLs affected: `/menu`, `/upgrades`, `/walkthrough` rewritten in place; no new routes.
+- Sources: `karinderyawiki.com/guides/how-to-make-money` (page last updated 2026-09-13), `rouniverse.com/articles/karinderya-guide`. Snapshot numbers are clearly tagged community-derived and dated 2026-08-24; the Deluxe Stove caveat is dated 2026-09-13.
+- Internal link role: snapshot lives on /menu and /upgrades; /walkthrough points to both; /codes is cross-linked from both snapshot modules.
+- Verification: `npm run verify`.
+
 ### 2026-08-12 - Static discovery and review freshness baseline added
 
 - Task: Add locale-aware static search, automatic recent updates, visible review dates, and browser metadata/security defaults to the shared template.
