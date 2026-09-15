@@ -6,6 +6,15 @@ Record every growth-relevant edit here. Keep entries short, factual, and useful 
 
 ## Change Log
 
+### 2026-09-16 - Active codes roster refreshed on /codes
+
+- Task: Replace the stale 2026-09-08 roster with the two verified-in-game codes (1MFAVORITES, CUSHIONCHAIRSTO) and their per-code rewards, refresh the expired roster with CUSHIONCHAIR + DECOPART1 + BRGYPERMIT + 100KCCU, and add a re-check pointer for the September 26 Update.
+- Files changed: `src/data/pages/fixed-pages.ts` (codes page metaDescription, summary, quickAnswer, keyFacts, active-codes-roster data-table, expired-roster prose, new recheck-pointer callout, lastReviewed), `GROWTH_LOG.md`.
+- URLs affected: `/codes` only; existing page rewritten in place, no new routes.
+- Sources: karinderyawiki.com/codes/all-codes (last updated 2026-09-14, in-game verification 2026-09-13), gamerant.com/karinderya-codes-roblox, rouniverse.com, karinderya.org/updates/.
+- Internal link role: codes page is the dedicated dated roster; cross-links from `/` (hero CTA + entity-grid) and `/walkthrough` (link list + Codes-panel step) already point to `/codes/` and need no change.
+- Verification: `npm run verify`.
+
 ### 2026-09-15 - Starter cash economy snapshot added
 
 - Task: Add a community-derived starting-economy snapshot to the Menu and Upgrades pages (and a short pointer on Walkthrough) so a new karinderya owner can plan the first session around dated ticket, grocery, and customer-milestone numbers, and so the Deluxe Stove equipment-priority recommendation picks up the 2026-09-13 caveat that it is no longer code-redeemable.

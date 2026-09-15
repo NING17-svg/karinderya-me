@@ -114,9 +114,9 @@ export const fixedPages: PageContent[] = [
     h1: "Karinderya! codes, redemption, and code rewards",
     seoTitle: "Karinderya! codes and how to redeem them",
     metaDescription:
-      "Working Karinderya! codes for Roblox (DECOPART1, BRGYPERMIT, 100KCCU), how to redeem them inside the in-game Codes menu, and what each code rewards. Includes an expired roster from public aggregators dated 2026-09-08.",
+      "Working Karinderya! codes for Roblox (1MFAVORITES, CUSHIONCHAIRSTO) as of 2026-09-14, how to redeem them inside the in-game Codes menu, and what each code rewards. Includes an expired roster from public aggregators and a re-check pointer for the September 26 Update.",
     summary:
-      "Codes roster and redemption walkthrough for Karinderya! on Roblox. The active roster lists three verified codes (DECOPART1, BRGYPERMIT, 100KCCU) with their known rewards, plus an expired roster from the public aggregators so future churn is visible from one page.",
+      "Codes roster and redemption walkthrough for Karinderya! on Roblox. The active roster lists two verified codes (1MFAVORITES, CUSHIONCHAIRSTO) with their known rewards, plus an expired roster from the public aggregators and a re-check pointer before the September 26 Update.",
     hero: {
       eyebrow: "Codes & rewards",
       subtitle:
@@ -128,13 +128,13 @@ export const fixedPages: PageContent[] = [
       ],
     },
     quickAnswer:
-      "As of 2026-09-08, the active Karinderya! roster on the public aggregators lists three codes: DECOPART1 (5k Cash + 2x Cash Potion), BRGYPERMIT (cash + potions), and 100KCCU (cash). Paste or type each code exactly inside the in-game Codes panel to redeem; codes are case-sensitive and time-limited, so re-check the aggregator the day you redeem.",
+      "As of 2026-09-14, the active Karinderya! roster lists two codes verified in-game on 2026-09-13: 1MFAVORITES (100,000 Cash + 2x Cash Potion) and CUSHIONCHAIRSTO (1,000 Cash + 12x CushionChair). Paste or type each code exactly inside the in-game Codes panel; both are likely to be retired by the September 26 Update, so re-check the in-game Codes panel before the next session.",
     keyFacts: [
       { label: "Where to redeem", value: "In-game Codes button" },
-      { label: "Roster source", value: "Public aggregators (Gamerant, karinderyawiki, Dexerto, MrGuider, ProGameGuides, Roblox Den, Beebom)" },
-      { label: "Roster dated", value: "2026-09-08" },
-      { label: "Update cadence", value: "Re-check before redeeming" },
-      { label: "Active codes", value: "DECOPART1, BRGYPERMIT, 100KCCU" },
+      { label: "Roster source", value: "karinderyawiki, Gamerant, rouniverse, karinderya.org" },
+      { label: "Roster dated", value: "2026-09-14 (in-game verification 2026-09-13)" },
+      { label: "Update cadence", value: "Re-check before and after the September 26 Update" },
+      { label: "Active codes", value: "1MFAVORITES, CUSHIONCHAIRSTO" },
     ],
     modules: [
       {
@@ -187,7 +187,7 @@ export const fixedPages: PageContent[] = [
       {
         id: "active-codes-roster",
         type: "data-table",
-        heading: "Active Karinderya! codes (dated 2026-09-08)",
+        heading: "Active Karinderya! codes (dated 2026-09-14)",
         columns: [
           { key: "code", label: "Code" },
           { key: "reward", label: "Reward" },
@@ -195,19 +195,14 @@ export const fixedPages: PageContent[] = [
         ],
         rows: [
           {
-            code: "DECOPART1",
-            reward: "5k Cash + 2x Cash Potion",
-            source: "Gamerant, karinderyawiki",
+            code: "1MFAVORITES",
+            reward: "100,000 Cash + 2x Cash Potion",
+            source: "karinderyawiki, Gamerant, rouniverse, karinderya.org",
           },
           {
-            code: "BRGYPERMIT",
-            reward: "Cash + potions",
-            source: "Gamerant, karinderyawiki",
-          },
-          {
-            code: "100KCCU",
-            reward: "Cash",
-            source: "Gamerant, karinderyawiki",
+            code: "CUSHIONCHAIRSTO",
+            reward: "1,000 Cash + 12x CushionChair",
+            source: "karinderyawiki, Gamerant, rouniverse, karinderya.org",
           },
         ],
       },
@@ -216,14 +211,22 @@ export const fixedPages: PageContent[] = [
         type: "prose",
         heading: "Expired roster from public aggregators",
         body:
-          "The public aggregators (Gamerant, karinderyawiki, Dexerto, MrGuider, ProGameGuides, Roblox Den, Beebom) keep an expired section so future churn is visible from one page. Codes below previously redeemed for cash, potions, or building materials but no longer grant a reward in Karinderya! as of 2026-09-08: 50KCCU, 3MVISITS (cash + building materials), 2MVISITS (cash + building materials), BAKARENEPAIRYAN (cash + building materials), BATINATAYOHA, 1MVISITS (cash + Deluxe Stove + Parsons Chair + Parsons Table), LERISNATO (5k Cash), BALDOG (5k Cash), MATERIALSDAW (5k Cash + building materials), BRICKS (1k Cash). If a code in this list ever returns a reward again, treat it as a creator reactivation rather than a normal roster entry; the public aggregators will reflect the change on their next refresh.",
+          "Codes below previously redeemed in Karinderya! but no longer grant a reward as of 2026-09-14, ordered from most recent retirement: CUSHIONCHAIR (12x CushionChair), DECOPART1 (5k Cash + 2x Cash Potion), BRGYPERMIT (cash + potions), 100KCCU (cash), 50KCCU, 3MVISITS (cash + building materials), 2MVISITS (cash + building materials), BAKARENEPAIRYAN (cash + building materials), BATINATAYOHA, 1MVISITS (cash + Deluxe Stove + Parsons Chair + Parsons Table), LERISNATO (5k Cash), BALDOG (5k Cash), MATERIALSDAW (5k Cash + building materials), BRICKS (1k Cash). The September 12, 2026 Mini-Update retired CUSHIONCHAIR, DECOPART1, BRGYPERMIT, and 100KCCU in one pass. If a code in this list ever returns a reward again, treat it as a creator reactivation rather than a normal roster entry; the public aggregators will reflect the change on their next refresh.",
+      },
+      {
+        id: "recheck-pointer",
+        type: "callout",
+        tone: "tip",
+        title: "Re-check after the September 26 Update!",
+        body:
+          "The September 26 Update is the next scheduled Mini-Update. Both active codes (1MFAVORITES, CUSHIONCHAIRSTO) are tied to milestones that pre-date the September 26 release, so the roster is likely to churn on that day. Before your next session, open the in-game Codes panel inside Karinderya! to confirm the strings still redeem; if they do not, this page and the public aggregators (karinderyawiki, Gamerant, rouniverse, karinderya.org) will reflect the new roster on their next refresh.",
       },
     ],
     faqIds: ["do-codes-exist", "where-to-find-codes", "expired-code-help", "is-official-karinderya-me"],
     relatedPageIds: ["identity-overview", "menu", "upgrades", "walkthrough"],
     schemaTypes: ["Article", "BreadcrumbList", "FAQPage"],
     sourceStatus: "official",
-    lastReviewed: "2026-09-08",
+    lastReviewed: "2026-09-16",
   },
   {
     id: "menu",
