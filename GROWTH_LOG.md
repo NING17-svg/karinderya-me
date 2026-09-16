@@ -6,6 +6,15 @@ Record every growth-relevant edit here. Keep entries short, factual, and useful 
 
 ## Change Log
 
+### 2026-09-17 - Active codes roster refreshed on /codes (CUSHIONCHAIRSTO retired)
+
+- Task: Replace the 2026-09-16 active roster with the 2026-09-17 karinderyawiki-verified pair (1MFAVORITES alone as active), move CUSHIONCHAIRSTO into the expired roster with its ~3-day active window stamp and an explicit 'expired by 2026-09-16' line, keep the 'Re-check after the September 26 Update!' callout pointed at the in-game Codes panel, refresh the dated caveat to 2026-09-17, advance lastReviewed to 2026-09-17, and add a one-line 'Karinderya codes churn on a ~3-day window for new furniture codes' note.
+- Files changed: `src/data/pages/fixed-pages.ts` (codes page metaDescription, summary, quickAnswer, keyFacts, active-codes-roster data-table, new churn-note prose module, expired-roster prose, recheck-pointer callout, lastReviewed), `GROWTH_LOG.md`.
+- URLs affected: `/codes` only; existing page rewritten in place, no new routes.
+- Sources: karinderyawiki.com/codes/all-codes (in-game verification 2026-09-16), gamerant.com/karinderya-codes-roblox, rouniverse.com, karinderya.org/updates/.
+- Internal link role: codes page is the dedicated dated roster; relatedPageIds still point to /walkthrough and /about (identity-overview) for first-time-redemption context.
+- Verification: `npm run verify`.
+
 ### 2026-09-16 - Active codes roster refreshed on /codes
 
 - Task: Replace the stale 2026-09-08 roster with the two verified-in-game codes (1MFAVORITES, CUSHIONCHAIRSTO) and their per-code rewards, refresh the expired roster with CUSHIONCHAIR + DECOPART1 + BRGYPERMIT + 100KCCU, and add a re-check pointer for the September 26 Update.

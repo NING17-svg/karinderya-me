@@ -114,9 +114,9 @@ export const fixedPages: PageContent[] = [
     h1: "Karinderya! codes, redemption, and code rewards",
     seoTitle: "Karinderya! codes and how to redeem them",
     metaDescription:
-      "Working Karinderya! codes for Roblox (1MFAVORITES, CUSHIONCHAIRSTO) as of 2026-09-14, how to redeem them inside the in-game Codes menu, and what each code rewards. Includes an expired roster from public aggregators and a re-check pointer for the September 26 Update.",
+      "Working Karinderya! codes for Roblox (1MFAVORITES) as of 2026-09-17, how to redeem them inside the in-game Codes menu, and what each code rewards. Includes an expired roster from public aggregators (CUSHIONCHAIRSTO retired by 2026-09-16 after a ~3-day window) and a re-check pointer for the September 26 Update.",
     summary:
-      "Codes roster and redemption walkthrough for Karinderya! on Roblox. The active roster lists two verified codes (1MFAVORITES, CUSHIONCHAIRSTO) with their known rewards, plus an expired roster from the public aggregators and a re-check pointer before the September 26 Update.",
+      "Codes roster and redemption walkthrough for Karinderya! on Roblox. The active roster lists one verified code (1MFAVORITES) with its known reward, plus an expired roster from the public aggregators covering CUSHIONCHAIRSTO's ~3-day window and a re-check pointer before the September 26 Update.",
     hero: {
       eyebrow: "Codes & rewards",
       subtitle:
@@ -128,13 +128,13 @@ export const fixedPages: PageContent[] = [
       ],
     },
     quickAnswer:
-      "As of 2026-09-14, the active Karinderya! roster lists two codes verified in-game on 2026-09-13: 1MFAVORITES (100,000 Cash + 2x Cash Potion) and CUSHIONCHAIRSTO (1,000 Cash + 12x CushionChair). Paste or type each code exactly inside the in-game Codes panel; both are likely to be retired by the September 26 Update, so re-check the in-game Codes panel before the next session.",
+      "As of 2026-09-17, the active Karinderya! roster lists one code verified in-game on 2026-09-16: 1MFAVORITES (100,000 Cash + 2x Cash Potion). CUSHIONCHAIRSTO (1,000 Cash + 12x CushionChair) was retired by 2026-09-16 after roughly a 3-day active window. Paste or type the active code exactly inside the in-game Codes panel; 1MFAVORITES is likely to be retired by the September 26 Update, so re-check the in-game Codes panel before the next session. New furniture codes released alongside Mini-Updates typically churn on a ~3-day window, so the short life is normal and not a site bug.",
     keyFacts: [
       { label: "Where to redeem", value: "In-game Codes button" },
       { label: "Roster source", value: "karinderyawiki, Gamerant, rouniverse, karinderya.org" },
-      { label: "Roster dated", value: "2026-09-14 (in-game verification 2026-09-13)" },
+      { label: "Roster dated", value: "2026-09-17 (in-game verification 2026-09-16 via karinderyawiki)" },
       { label: "Update cadence", value: "Re-check before and after the September 26 Update" },
-      { label: "Active codes", value: "1MFAVORITES, CUSHIONCHAIRSTO" },
+      { label: "Active codes", value: "1MFAVORITES" },
     ],
     modules: [
       {
@@ -187,7 +187,7 @@ export const fixedPages: PageContent[] = [
       {
         id: "active-codes-roster",
         type: "data-table",
-        heading: "Active Karinderya! codes (dated 2026-09-14)",
+        heading: "Active Karinderya! codes (dated 2026-09-17)",
         columns: [
           { key: "code", label: "Code" },
           { key: "reward", label: "Reward" },
@@ -199,19 +199,21 @@ export const fixedPages: PageContent[] = [
             reward: "100,000 Cash + 2x Cash Potion",
             source: "karinderyawiki, Gamerant, rouniverse, karinderya.org",
           },
-          {
-            code: "CUSHIONCHAIRSTO",
-            reward: "1,000 Cash + 12x CushionChair",
-            source: "karinderyawiki, Gamerant, rouniverse, karinderya.org",
-          },
         ],
+      },
+      {
+        id: "churn-note",
+        type: "prose",
+        heading: "Codes churn on a ~3-day window for new furniture codes",
+        body:
+          "Karinderya codes tied to new furniture or event milestones typically churn on a ~3-day window. CUSHIONCHAIRSTO is the most recent example: it shipped with the September 12, 2026 Mini-Update alongside the CushionChair item, and was retired by karinderyawiki by 2026-09-16 after roughly 3 days. A short active life is normal for this roster and is not a site bug; re-check the in-game Codes panel on the day you redeem, and re-check this page and the public aggregators after every Mini-Update.",
       },
       {
         id: "expired-roster",
         type: "prose",
         heading: "Expired roster from public aggregators",
         body:
-          "Codes below previously redeemed in Karinderya! but no longer grant a reward as of 2026-09-14, ordered from most recent retirement: CUSHIONCHAIR (12x CushionChair), DECOPART1 (5k Cash + 2x Cash Potion), BRGYPERMIT (cash + potions), 100KCCU (cash), 50KCCU, 3MVISITS (cash + building materials), 2MVISITS (cash + building materials), BAKARENEPAIRYAN (cash + building materials), BATINATAYOHA, 1MVISITS (cash + Deluxe Stove + Parsons Chair + Parsons Table), LERISNATO (5k Cash), BALDOG (5k Cash), MATERIALSDAW (5k Cash + building materials), BRICKS (1k Cash). The September 12, 2026 Mini-Update retired CUSHIONCHAIR, DECOPART1, BRGYPERMIT, and 100KCCU in one pass. If a code in this list ever returns a reward again, treat it as a creator reactivation rather than a normal roster entry; the public aggregators will reflect the change on their next refresh.",
+          "Codes below previously redeemed in Karinderya! but no longer grant a reward as of 2026-09-17, ordered from most recent retirement: CUSHIONCHAIRSTO (1,000 Cash + 12x CushionChair, ~3-day active window, expired by 2026-09-16), CUSHIONCHAIR (12x CushionChair), DECOPART1 (5k Cash + 2x Cash Potion), BRGYPERMIT (cash + potions), 100KCCU (cash), 50KCCU, 3MVISITS (cash + building materials), 2MVISITS (cash + building materials), BAKARENEPAIRYAN (cash + building materials), BATINATAYOHA, 1MVISITS (cash + Deluxe Stove + Parsons Chair + Parsons Table), LERISNATO (5k Cash), BALDOG (5k Cash), MATERIALSDAW (5k Cash + building materials), BRICKS (1k Cash). The September 12, 2026 Mini-Update retired CUSHIONCHAIR, DECOPART1, BRGYPERMIT, and 100KCCU in one pass; CUSHIONCHAIRSTO was retired a few days later. If a code in this list ever returns a reward again, treat it as a creator reactivation rather than a normal roster entry; the public aggregators will reflect the change on their next refresh.",
       },
       {
         id: "recheck-pointer",
@@ -219,14 +221,14 @@ export const fixedPages: PageContent[] = [
         tone: "tip",
         title: "Re-check after the September 26 Update!",
         body:
-          "The September 26 Update is the next scheduled Mini-Update. Both active codes (1MFAVORITES, CUSHIONCHAIRSTO) are tied to milestones that pre-date the September 26 release, so the roster is likely to churn on that day. Before your next session, open the in-game Codes panel inside Karinderya! to confirm the strings still redeem; if they do not, this page and the public aggregators (karinderyawiki, Gamerant, rouniverse, karinderya.org) will reflect the new roster on their next refresh.",
+          "The September 26 Update is the next scheduled Mini-Update. The one active code (1MFAVORITES) is tied to a milestone that pre-dates the September 26 release, so the roster is likely to churn on that day. Before your next session, open the in-game Codes panel inside Karinderya! to confirm the string still redeems; if it does not, this page and the public aggregators (karinderyawiki, Gamerant, rouniverse, karinderya.org) will reflect the new roster on their next refresh.",
       },
     ],
     faqIds: ["do-codes-exist", "where-to-find-codes", "expired-code-help", "is-official-karinderya-me"],
     relatedPageIds: ["identity-overview", "menu", "upgrades", "walkthrough"],
     schemaTypes: ["Article", "BreadcrumbList", "FAQPage"],
     sourceStatus: "official",
-    lastReviewed: "2026-09-16",
+    lastReviewed: "2026-09-17",
   },
   {
     id: "menu",
