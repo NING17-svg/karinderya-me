@@ -6,6 +6,15 @@ Record every growth-relevant edit here. Keep entries short, factual, and useful 
 
 ## Change Log
 
+### 2026-09-18 - Equipment upgrade tiers extended on /upgrades
+
+- Task: Add stove-tier roster, 1MVISITS / 2MVISITS / 3MVISITS milestone-bundle history, codes-button tutorial gate, and build-materials second-currency to /upgrades per task 2026-09-18-karinderya-me-equipment-upgrade-tiers. Skipped the per-tier Robux table and the one-line Deluxe Stove Robux price because the listed beginner-guide sources (earnaldo beginner guide, karinderyawiki Code Redemption Guide) do not publish per-tier Robux prices.
+- Files changed: `src/data/pages/fixed-pages.ts` (new `stove-tier-roster`, `milestone-bundle-history`, `codes-button-tutorial-gate`, and `build-materials-second-currency` modules on /upgrades; updated metaDescription, summary, quickAnswer, keyFacts, and lastReviewed), `GROWTH_LOG.md`.
+- URLs affected: `/upgrades` rewritten in place; no new routes.
+- Sources: https://earnaldo.com/blog/karinderya-beginner-guide (stove tier inventory capture, codes-button tutorial gate, build materials), https://karinderyawiki.com/codes/how-to-redeem-codes (1MVISITS / 2MVISITS / 3MVISITS / MATERIALSDAW milestone bundles, 2026-09-02 expiry).
+- Internal link role: /upgrades is the equipment-priority page; cross-links from /home (guide-map) and /walkthrough (first-hour checklist + guide-map) already point to /upgrades and need no change.
+- Verification: `npm run verify` (note: `validate:template` fails for a pre-existing template-configuration reason — guide-pages fixture deleted by configurator but validator not updated — not batch-induced; `validate:content`, `validate:rendered-seo`, `next build` all pass).
+
 ### 2026-09-17 - Active codes roster refreshed on /codes (CUSHIONCHAIRSTO retired)
 
 - Task: Replace the 2026-09-16 active roster with the 2026-09-17 karinderyawiki-verified pair (1MFAVORITES alone as active), move CUSHIONCHAIRSTO into the expired roster with its ~3-day active window stamp and an explicit 'expired by 2026-09-16' line, keep the 'Re-check after the September 26 Update!' callout pointed at the in-game Codes panel, refresh the dated caveat to 2026-09-17, advance lastReviewed to 2026-09-17, and add a one-line 'Karinderya codes churn on a ~3-day window for new furniture codes' note.
