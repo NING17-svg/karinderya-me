@@ -427,9 +427,9 @@ export const fixedPages: PageContent[] = [
     h1: "Karinderya! upgrades and progression",
     seoTitle: "Karinderya! upgrades, progression order, and the customer-money loop",
     metaDescription:
-      "How upgrades, unlocks, and progression work in Karinderya! and the fastest way to advance the karinderya. Includes a 2026-09-13 caveat that the Deluxe Stove is no longer code-redeemable, so equipment priority now assumes cash-funded purchases. Specific upgrade math beyond community videos is not confirmed.",
+      "How upgrades, unlocks, and progression work in Karinderya! and the fastest way to advance the karinderya. Covers the Basic / Standard / Deluxe stove tier roster, the 1MVISITS / 2MVISITS / 3MVISITS milestone-bundle history behind the Deluxe Stove unlock path, build materials as a second currency, and the codes-button tutorial gate. Includes a 2026-09-13 caveat that the Deluxe Stove is no longer code-redeemable. Per-tier Robux prices are not confirmed by the listed sources.",
     summary:
-      "Upgrades, unlocks, and progression in Karinderya! on Roblox: the customer-money loop, equipment tiers, and a recommended upgrade order that now assumes cash-funded purchases for the Deluxe Stove.",
+      "Upgrades, unlocks, and progression in Karinderya! on Roblox: the customer-money loop, equipment tiers (Basic / Standard / Deluxe stoves plus build materials as a second currency), the codes-button tutorial gate, and a recommended upgrade order that now assumes cash-funded purchases for the Deluxe Stove.",
     hero: {
       eyebrow: "Upgrades & progression",
       subtitle:
@@ -441,14 +441,18 @@ export const fixedPages: PageContent[] = [
       ],
     },
     quickAnswer:
-      "Karinderya! progression is a single closed loop: customers arrive, order from the current menu, pay cash, and that cash funds equipment upgrades and menu unlocks. The right progression order is to chase the equipment tier that unlocks the next dish on the menu, run that dish until the next menu unlock, and repeat. Community trackers record 100, 400, 670, and 1,994 customers served as the menu-group unlock thresholds. As of 2026-09-13 the Deluxe Stove is no longer free via a code, so the equipment-priority recommendation now assumes cash-funded purchases. Specific upgrade tier math beyond what community trackers state is not confirmed.",
+      "Karinderya! progression is a single closed loop: customers arrive, order from the current menu, pay cash, and that cash funds equipment upgrades and menu unlocks. The right progression order is to chase the equipment tier that unlocks the next dish on the menu, run that dish until the next menu unlock, and repeat. Community trackers record 100, 400, 670, and 1,994 customers served as the menu-group unlock thresholds. The stove inventory tier roster is Basic / Standard / Deluxe; build materials (Concrete, Cement, Wood, Wood Plan, Brick) act as a second currency alongside cash. The codes button is hidden until the starter furniture is placed, and as of 2026-09-13 the Deluxe Stove is no longer free via a code, so equipment priority now assumes cash-funded purchases. Per-tier Robux prices are not published by the listed beginner-guide sources.",
     keyFacts: [
       { label: "Loop source", value: "Customer payments fund equipment and menu unlocks" },
       { label: "Recommended order", value: "Equipment tier that unlocks next dish" },
       { label: "Customer-milestone menu-group unlocks", value: "100 / 400 / 670 / 1,994 served" },
+      { label: "Stove tier roster", value: "Basic / Standard / Deluxe (per-tier Robux not confirmed)" },
+      { label: "Build materials", value: "Concrete, Cement, Wood, Wood Plan, Brick (second currency)" },
+      { label: "Codes button", value: "Hidden until starter furniture is placed (tutorial gate)" },
+      { label: "Deluxe Stove unlock path", value: "Was 1MVISITS / 2MVISITS milestone code; expired 2026-09-02" },
       { label: "Deluxe Stove (2026-09-13)", value: "No longer code-redeemable; must be earned or purchased" },
       { label: "Upgrade math beyond milestones", value: "Not confirmed" },
-      { label: "Source tier", value: "Roblox universe page, karinderyawiki, rouniverse" },
+      { label: "Source tier", value: "Roblox universe page, karinderyawiki, rouniverse, earnaldo" },
     ],
     modules: [
       {
@@ -457,6 +461,16 @@ export const fixedPages: PageContent[] = [
         heading: "The three upgrade axes in Karinderya!",
         body:
           "Karinderya! progression runs on three axes: equipment upgrades (the karinderya tier, the cooking gear, the counter layout), menu unlocks (which ulam dishes are sellable at the current karinderya tier), and customer satisfaction (how happy customers are with the menu, the service speed, and the karinderya appearance). All three axes are paid for out of the same cash balance; the right way to spend cash is whichever one is currently blocking the next step of the loop.",
+      },
+      {
+        id: "stove-tier-roster",
+        type: "prose",
+        heading: "Stove tier roster (Basic / Standard / Deluxe)",
+        body:
+          "The earnaldo beginner guide captures three named stove tiers on the in-game inventory category tab: Basic Stove, Standard Stove, and Deluxe Stove. Stoves are stackable inventory items rather than a one-time linear replacement — you can hold several at once and place them side by side in the karinderya layout. Per-tier Robux prices are not published by the listed beginner-guide sources; the earnaldo check observed the in-game game-pass endpoint returning an empty array, so treat any specific per-tier Robux number from a third-party video or aggregator as unconfirmed. The same caveat that applies to upgrade math applies here: re-check against the in-game shop when a specific price matters.",
+        links: [
+          { label: "earnaldo beginner guide", href: "https://earnaldo.com/blog/karinderya-beginner-guide" },
+        ],
       },
       {
         id: "priority-order",
@@ -493,6 +507,36 @@ export const fixedPages: PageContent[] = [
           "Codes sit alongside the customer-money loop as a second cash source. Redeeming an active code adds cash (or a boost) to the karinderya without requiring a customer wave. Codes do not replace the customer-money loop; they speed it up. The codes page lists the current codes roster and the redemption walkthrough.",
       },
       {
+        id: "milestone-bundle-history",
+        type: "prose",
+        heading: "1MVISITS / 2MVISITS / 3MVISITS milestone-bundle history",
+        body:
+          "The Deluxe Stove used to ship as a milestone-bundle code reward. The karinderyawiki Code Redemption Guide documents the bundle history: 1MVISITS paid 5k Cash + Deluxe Stove + Parsons Chair + Parsons Table (first verified in-game on August 24, 2026, expired by September 2, 2026); 2MVISITS paid the same bundle and was tied to the 2M visits milestone printed in the official game description (also expired by September 2, 2026); 3MVISITS paid 5k Cash + building materials (Pan, Cement, Wood, and more) and expired by September 2, 2026. With those milestone codes retired, the Deluxe Stove is no longer code-redeemable as of 2026-09-13 — it must be earned through the customer-money loop or purchased in-game. Other developer-issued milestone codes (MATERIALSDAW, BRICKS, LERISNATO, BALDOG, BAKARENEPAIRYAN) expired in late August 2026 and are listed in the expired roster on /codes.",
+        links: [
+          { label: "karinderyawiki Code Redemption Guide", href: "https://karinderyawiki.com/codes/how-to-redeem-codes" },
+          { label: "Expired codes roster", href: "/codes/" },
+        ],
+      },
+      {
+        id: "codes-button-tutorial-gate",
+        type: "callout",
+        tone: "caution",
+        title: "Codes button is hidden until the starter furniture is placed",
+        body:
+          "The earnaldo beginner guide records that the ticket-shaped Codes button in the top-right corner is hidden on the HUD until the first 'Place Table and Chairs' objective is complete. Placing the starter furniture on the green footprint pads is what reveals it. If a code appears not to redeem, finish the furniture placement objective first and re-open the Codes panel; pasting or typing codes outside the in-game panel never credits a reward.",
+      },
+      {
+        id: "build-materials-second-currency",
+        type: "prose",
+        heading: "Build materials as a second currency",
+        body:
+          "Build materials act as a second currency alongside customer cash. The earnaldo beginner guide records that developer-issued codes have paid out Concrete, Cement, Wood, Wood Plan, and Brick; these stack in the same inventory grid as stoves, and the guide treats them as something the karinderya is also short of. Milestone codes that specifically rewarded building materials include 3MVISITS (5k Cash + Pan, Cement, Wood, and more, expired 2026-09-02) and MATERIALSDAW (5k Cash + building materials, expired 2026-08-24). Apply the same recommended-order thinking to materials as to cash: spend them on whichever axis is currently blocking the next step of the loop, and re-check after every Mini-Update because the developer rotates material-bundle code rewards roughly weekly.",
+        links: [
+          { label: "earnaldo beginner guide", href: "https://earnaldo.com/blog/karinderya-beginner-guide" },
+          { label: "karinderyawiki Code Redemption Guide", href: "https://karinderyawiki.com/codes/how-to-redeem-codes" },
+        ],
+      },
+      {
         id: "starting-economy-snapshot",
         type: "prose",
         heading: "Starting-economy snapshot (community-derived, dated 2026-08-24 / 2026-09-13)",
@@ -526,7 +570,7 @@ export const fixedPages: PageContent[] = [
     relatedPageIds: ["identity-overview", "menu", "walkthrough"],
     schemaTypes: ["Article", "BreadcrumbList", "FAQPage"],
     sourceStatus: "official",
-    lastReviewed: "2026-09-15",
+    lastReviewed: "2026-09-18",
   },
   {
     id: "walkthrough",
